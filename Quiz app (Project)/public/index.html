@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        /* display: flex;
+        justify-content: center; */
+        background-image: url(./ok.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 80px;
+        color: white;
+        font-size: 35px;
+    }
+    #time{
+        display: flex;
+        justify-content: center;
+    }
+    #para{
+        display: flex;
+        justify-content: center;
+        color: rgb(247, 248, 152);
+        
+    }
+    #option1{
+        /* display: flex; */
+        text-align: center;
+        width: 500px;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin-left: 360px;
+        background-color: rgb(247, 248, 152);
+        box-shadow: 0px 0px 20px rgb(247, 248, 152);
+        color: black;
+    }
+    #button{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #btn{
+        font-size: xx-large;
+        background-color: rgb(142, 137, 10);
+        padding: 5px;
+        border-radius: 20px;
+    }
+</style>
+<body onload="nextQuestion()">
+    <div id="time">
+        <p id="timer">2:00</p>
+    </div>
+    <div id="para">
+        <p id="ques"></p>
+
+    </div>
+
+        <div id="option1">
+            <input onclick="clicked()" type="radio" value="1" name="options" id="chek">
+        <label for="chek" id="opt1"></label>
+        </div>
+
+<br>
+        <div id="option1">
+            <input onclick="clicked()" type="radio" value="2" name="options" id="chek1">
+        <label for="chek1" id="opt2"></label>
+        </div>
+
+<br>
+        <div id="option1">
+        <input onclick="clicked()" type="radio" value="3" name="options" id="chek2">
+        <label for="chek2" id="opt3"></label>
+        </div>
+        <br>
+        <div id="button">
+        <button id="btn" disabled onclick="nextQuestion()">Next</button>
+        </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
